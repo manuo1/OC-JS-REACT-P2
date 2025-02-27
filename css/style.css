@@ -485,11 +485,8 @@ footer {
   .main-container {
     padding: 0;
   }
-  header {
+  .title-and-search {
     padding: 0 50px;
-  }
-  .hebergements-and-populaires {
-    margin: 0;
   }
   /*---------- Barre de navigation ----------*/
   nav {
@@ -548,7 +545,11 @@ footer {
     font-size: 14px;
     flex: 1 1 calc(50% - 20px);
   }
+
   /*---------- Hébergements et Populaires ----------*/
+  .hebergements-and-populaires {
+    margin: 0;
+  }
   .hebergements-and-populaires section {
     border-radius: 0;
   }
@@ -585,6 +586,7 @@ footer {
 
   .footer-container {
     flex-direction: column;
+    padding: 0 50px;
   }
   .footer-section {
     width: 100%;
