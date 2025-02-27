@@ -265,18 +265,7 @@ h1 {
   font-size: 16px;
 }
 
-/*---------- Hébergements And Populaires ----------*/
-.hebergements-and-populaires {
-  display: flex;
-  justify-content: space-between;
-}
-
-.hebergements-and-populaires section {
-  background-color: var(--neutral-light);
-  border-radius: 20px;
-  padding: 30px;
-  box-sizing: border-box;
-}
+/*---------- Cartes Commun ----------*/
 .card-title {
   margin-top: 10px;
   margin-bottom: 4px;
@@ -289,6 +278,20 @@ h1 {
 .card-rating {
   margin-bottom: 8px;
 }
+
+/*---------- Hébergements And Populaires ----------*/
+.hebergements-and-populaires {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hebergements-and-populaires section {
+  background-color: var(--neutral-light);
+  border-radius: 20px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
 /*---------- Hebergements ----------*/
 .hebergements {
   width: 65%;
@@ -378,7 +381,36 @@ h1 {
   justify-content: space-between;
   box-sizing: border-box;
 }
+/*---------- Activités ----------*/
+.activites {
+  padding: 30px;
+}
+.activites-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 
+.activites-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 33px;
+}
+.activites-cards a {
+  width: calc(25% - 22.5px); /* 4card = 3x gap de 30px -> (3*30)/4 = 22.5px /*/
+}
+
+.activites-cards .card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; /* Toutes les cards de la ligne ont la même hauteur*/
+}
+
+.activites-cards img {
+  height: 200px;
+  border-radius: 20px 20px 0 0;
+}
 /*---------- Footer ----------*/
 
 footer {
