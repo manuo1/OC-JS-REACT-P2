@@ -7,8 +7,7 @@
     Titre
     Barre de recherche
     Filtres
-    Info nombre de résultats
-    Cartes Commun
+    Info nombre de 
     Hébergements et Populaires
     Hébergements
     Populaires
@@ -85,6 +84,8 @@ a {
 
 .card-title {
   font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 4px;
 }
 
 .euro {
@@ -95,20 +96,8 @@ a {
   color: var(--neutral-light);
 }
 
-.card-title {
-  margin-top: 10px;
-  margin-bottom: 4px;
-}
-
-.card-subtitle {
-  margin: 0;
-}
-
-.card-rating {
-  margin-bottom: 8px;
-}
-
 /*---------- Barre de navigation ----------*/
+
 nav {
   display: flex;
   align-items: flex-start;
@@ -359,6 +348,19 @@ h1 {
   flex-direction: column;
 }
 
+.hebergements-cards .card-title {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.hebergements-cards .card-subtitle {
+  margin-bottom: 8px;
+}
+
+.hebergements-cards .card-rating {
+  margin: 0;
+}
+
 .hebergements-load-more {
   display: flex;
   justify-content: flex-start;
@@ -411,6 +413,20 @@ h1 {
   justify-content: space-between;
   box-sizing: border-box;
 }
+
+.populaires-cards .card-title {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.populaires-cards .card-subtitle {
+  margin: 0;
+}
+
+.populaires-cards .card-rating {
+  margin-bottom: 5px;
+}
+
 /*---------- Activités ----------*/
 .activites {
   padding: 30px;
@@ -432,6 +448,7 @@ h1 {
 }
 
 .activites-cards .card {
+  padding: 0;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -441,6 +458,12 @@ h1 {
   height: 200px;
   border-radius: 20px 20px 0 0;
 }
+
+.activites-cards .card-title {
+  margin: 0;
+  padding: 10px 15px;
+}
+
 /*---------- Footer ----------*/
 
 footer {
