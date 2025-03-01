@@ -135,7 +135,8 @@ nav {
   color: var(--main-color);
 }
 
-.nav-link li:focus {
+.nav-links li:active,
+.nav-links li:focus {
   border-top: 2px solid var(--main-color);
   border-top: none;
 }
@@ -198,6 +199,7 @@ h1 {
   font-weight: 500;
   cursor: text;
   border: none;
+  height: 100%;
 }
 
 .search-container input::placeholder {
@@ -205,6 +207,7 @@ h1 {
   opacity: 1;
 }
 
+.search-container input:active,
 .search-container input:focus {
   outline: none;
 }
@@ -502,7 +505,7 @@ footer {
 /*---------- Media queries ----------*/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-  .nav-links li.active {
+  .nav-links li.nav-links-hebergements {
     border-top: 2px solid var(--main-color);
     color: var(--main-color);
   }
@@ -575,16 +578,15 @@ footer {
     border-bottom: 2px solid var(--main-bg-color);
     justify-content: center;
   }
-  .nav-links li.active {
+  .nav-links li.nav-links-hebergements {
     border-bottom: 2px solid var(--main-color);
     border-top: none;
     color: var(--main-color);
   }
-  .nav-links li:hover {
-    border-bottom: 2px solid var(--main-color);
-    border-top: none;
-  }
-  .nav-link li:focus {
+
+  .nav-links li:hover,
+  .nav-links li:active,
+  .nav-links li:focus {
     border-bottom: 2px solid var(--main-color);
     border-top: none;
   }
