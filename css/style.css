@@ -56,6 +56,7 @@ body {
 
 .main-container {
   width: 100%;
+  min-width: 320px;
   max-width: 1440px;
   padding: 0 50px;
   box-sizing: border-box;
@@ -84,8 +85,6 @@ a {
 
 .card-title {
   font-size: 16px;
-  margin-top: 10px;
-  margin-bottom: 4px;
 }
 
 .euro {
@@ -266,9 +265,6 @@ h1 {
   background-color: var(--primary-light);
 }
 
-.filter-button.active {
-  background-color: var(--primary-light);
-}
 /*---------- Info nombre de résultats----------*/
 .info-results {
   display: flex;
@@ -329,11 +325,13 @@ h1 {
 }
 .hebergements-cards a {
   width: calc(33.333% - 20px); /* 3cards = 2x gap de 30px -> (2*30)/3 = 20px /*/
+  display: flex;
 }
 .hebergements-cards .card {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  width: 100%;
+  flex: 1;
 }
 
 .hebergements-cards img {
@@ -343,7 +341,9 @@ h1 {
 
 .hebergements-cards .card-content {
   max-width: 100%;
+  height: 100%;
   padding: 0 15px;
+  gap: 8px;
   display: flex;
   flex-direction: column;
 }
@@ -354,11 +354,12 @@ h1 {
 }
 
 .hebergements-cards .card-subtitle {
-  margin-bottom: 8px;
+  margin: 0;
 }
 
 .hebergements-cards .card-rating {
-  margin: 0;
+  margin-top: auto;
+  margin-bottom: 8px;
 }
 
 .hebergements-load-more {
@@ -550,6 +551,7 @@ footer {
     width: 100%;
     gap: 0;
   }
+
   .nav-links li {
     flex: 1 1 0;
     align-items: start;
@@ -600,6 +602,10 @@ footer {
   }
 
   /*---------- Small devices - Hébergements et Populaires ----------*/
+  .hebergements-and-populaires section.hebergements {
+    background-color: transparent;
+  }
+
   .hebergements-and-populaires {
     margin: 0;
   }
