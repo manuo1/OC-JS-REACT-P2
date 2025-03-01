@@ -373,12 +373,9 @@ h1 {
 }
 
 .load-more-btn {
-  background: none;
-  border: none;
   font-size: 18px;
   font-weight: bold;
   color: var(--main-text-color);
-  cursor: pointer;
 }
 
 .load-more-btn:hover {
