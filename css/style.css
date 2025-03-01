@@ -534,6 +534,10 @@ footer {
   .filter-button {
     font-size: 16px;
   }
+
+  .filters-title {
+    font-size: 17px;
+  }
 }
 
 /* Small devices (phones, less than 768px) */
@@ -542,7 +546,7 @@ footer {
     padding: 0;
   }
   .title-and-search {
-    padding: 0 50px;
+    padding: 0 20px;
   }
   /*---------- Small devices - Barre de navigation ----------*/
   nav {
@@ -586,11 +590,14 @@ footer {
   .search-container {
     max-width: 100%;
   }
+
   /*---------- Small devices - Filtres ----------*/
+
   .filters {
     flex-direction: column;
   }
   .filters-title {
+    font-size: 14px;
     width: 100%;
     text-align: left;
   }
@@ -613,6 +620,7 @@ footer {
   }
   .hebergements-and-populaires section {
     border-radius: 0;
+    padding: 20px;
   }
   .populaires {
     order: 1;
