@@ -34,24 +34,26 @@ Media queries
 }
 
 :root {
-  --primary-color: #0065fc;
-  --primary-light: #deebff;
-  --neutral-gray: #d9d9d9;
-  --neutral-light: #f2f2f2;
+  --main-color: #0065fc;
+  --main-bg-color: #f2f2f2;
+  --filter-bg-color: #deebff;
+
+  --border-gray: #d9d9d9;
   --neutral-white: #ffffff;
-  --text-color: #000000;
+
+  --main-text-color: #000000;
   --text-on-dark: #ffffff;
 }
 
 .fa-solid {
-  color: var(--primary-color);
+  color: var(--main-color);
 }
 
 body {
   margin: 0;
   display: flex;
   justify-content: center;
-  color: var(--text-color);
+  color: var(--main-text-color);
 }
 
 .main-container {
@@ -92,7 +94,7 @@ a {
 }
 
 .neutral-star {
-  color: var(--neutral-light);
+  color: var(--main-bg-color);
 }
 
 /*---------- Barre de navigation ----------*/
@@ -129,8 +131,8 @@ nav {
 }
 
 .nav-links li:hover {
-  border-top: 2px solid var(--primary-color);
-  color: var(--primary-color);
+  border-top: 2px solid var(--main-color);
+  color: var(--main-color);
 }
 
 .nav-links a {
@@ -168,7 +170,7 @@ h1 {
   height: 50px;
   max-width: 377px;
   border-radius: 15px;
-  border: 1px solid var(--neutral-light);
+  border: 1px solid var(--main-bg-color);
 }
 
 .location-icon {
@@ -177,7 +179,7 @@ h1 {
   align-items: center;
   justify-content: center;
   width: 50px;
-  background-color: var(--neutral-light);
+  background-color: var(--main-bg-color);
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
 }
@@ -194,7 +196,7 @@ h1 {
 }
 
 .search-container input::placeholder {
-  color: var(--text-color);
+  color: var(--main-text-color);
   opacity: 1;
 }
 
@@ -208,7 +210,7 @@ h1 {
   align-items: center;
   justify-content: center;
   padding: 0 15px;
-  background-color: var(--primary-color);
+  background-color: var(--main-color);
   color: var(--text-on-dark);
   font-weight: 700;
   font-size: 18px;
@@ -246,7 +248,7 @@ h1 {
   display: flex;
   align-items: center;
   background-color: var(--neutral-white);
-  border: 2px solid var(--neutral-gray);
+  border: 2px solid var(--border-gray);
   border-radius: 25px;
   padding: 10px 20px;
   cursor: pointer;
@@ -256,13 +258,13 @@ h1 {
 }
 
 .filter-button i {
-  color: var(--primary-color);
+  color: var(--main-color);
   margin-right: 10px;
   font-size: 18px;
 }
 
 .filter-button:hover {
-  background-color: var(--primary-light);
+  background-color: var(--filter-bg-color);
 }
 
 /*---------- Info nombre de résultats----------*/
@@ -280,12 +282,12 @@ h1 {
   justify-content: center;
   width: 24px;
   height: 24px;
-  border: 1px solid var(--neutral-gray);
+  border: 1px solid var(--border-gray);
   border-radius: 50%;
 }
 
 .info-icon i {
-  color: var(--primary-color);
+  color: var(--main-color);
   font-size: 10px; /* fontawesome = taille relative au texte...*/
 }
 
@@ -301,7 +303,7 @@ h1 {
 }
 
 .hebergements-and-populaires section {
-  background-color: var(--neutral-light);
+  background-color: var(--main-bg-color);
   border-radius: 20px;
   padding: 30px;
   box-sizing: border-box;
@@ -375,7 +377,7 @@ h1 {
   border: none;
   font-size: 18px;
   font-weight: bold;
-  color: var(--text-color);
+  color: var(--main-text-color);
   cursor: pointer;
 }
 
@@ -468,7 +470,7 @@ h1 {
 /*---------- Footer ----------*/
 
 footer {
-  background-color: var(--neutral-light);
+  background-color: var(--main-bg-color);
   width: 100%;
   margin-top: 30px;
 }
@@ -555,12 +557,12 @@ footer {
   .nav-links li {
     flex: 1 1 0;
     align-items: start;
-    border-bottom: 2px solid var(--neutral-light);
+    border-bottom: 2px solid var(--main-bg-color);
     justify-content: center;
   }
   .nav-links li:hover {
+    border-bottom: 2px solid var(--main-color);
     border-top: none;
-    border-bottom: 2px solid var(--primary-color);
   }
   /*---------- Small devices - Barre de recherche ----------*/
   .search-button-text {
