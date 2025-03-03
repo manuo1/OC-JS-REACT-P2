@@ -1,0 +1,88 @@
+
+    Initialisez le projet avec Git, et publiez le repo sur GitHub.
+
+Intégrez le header du projet
+    Concentrez vous sur la version desktop du site afin que celle-ci soit pleinement fonctionnelle. 
+    Vous travaillerez sur les versions tablette / mobile et aborderez la notion "media queries" plus tard (Étape numéro 11).
+    Pour réaliser le positionnement entre le logo Booki et les parties Hébergements/Activités, vous pouvez utiliser Flexbox (ou Grid). 
+    Attention à ne pas oublier la bordure bleue qui s’affiche au survol. 
+    Attention, la bordure bleue s’affiche au-dessus en version desktop, et en dessous en version mobile.
+    Distinguez les moments où il faut utiliser une propriété margin plutôt que padding.
+    Il est préférable d’utiliser des pixels plutôt que des pourcentages pour les valeurs des marges et des paddings.
+    Les balises HTML ont des propriétés CSS par défaut (par exemple, un titre “h1” est affiché en gras par défaut). 
+    Il faut savoir que par défaut, la balise “body” comporte des marges.
+
+Ajoutez le formulaire de recherche
+    Identifiez bien la construction de ce formulaire qui est constitué de 3 parties, comme on le voit sur la maquette.
+    Pour le moment, concentrez-vous sur la partie desktop, l’intégration de la partie responsive pourra se faire plus tard. 
+    Ensuite, avec du CSS, il faudra afficher ou masquer le mot ou l’icône en fonction de l’écran utilisé.
+    Attention à ne pas appliquer une bordure sur l’intégralité du champ de recherche, pour que le visuel corresponde à la maquette.
+    Attention au style de la barre de recherche : sur desktop, le bouton de recherche comprend le texte « Rechercher », 
+    alors que sur mobile, c’est une loupe. Pour gérer cela, il va falloir intégrer les deux éléments (le mot + l’icône) en HTML. 
+
+Ajout de la partie Filtres
+    Avec un bon découpage de la maquette, vous devriez pouvoir intégrer cette partie correctement avec Flexbox.
+    Commencez par intégrer les filtres sans vous préoccuper du changement d’apparence au survol.
+    Une fois les filtres en place, vous pouvez implémenter le changement de couleur de fond lors du survol.
+    Distinguez les moments où il faut utiliser une propriété margin plutôt que padding.
+    Il est préférable d’utiliser des pixels plutôt que des pourcentages pour les valeurs des marges et des paddings. 
+    En effet, l'utilisation de pourcentages sur des marges/paddings ne correspondrait pas au résultat attendu, 
+    car les variations de taille risqueraient d’être trop fortes d'un format d'écran à un autre. 
+
+Réalisez la « card » présente dans « Hébergements à Marseille »
+    Les cartes “hébergements” sont similaires aux cartes “les plus populaires” déjà fournies, donc inspirez-vous en. 
+    Attention cependant, elles sont différentes, notamment dans le sens d’alignement des éléments 
+    (à l’horizontale pour “les plus populaires” et à la verticale pour les cartes “hébergements”.)
+    Si aucune propriété CSS n’est appliquée sur une image, celle-ci va s’afficher dans sa taille d’origine. 
+    Comme pour de très nombreux éléments, donner une largeur en “%” à l’image est une bonne idée. Il sera nécessaire de définir une hauteur en pixels.
+    Une fois dimensionnée, l’image devrait être déformée. La propriété CSS `object-fit` permettra de corriger cela.
+    Les images doivent être intégrées via le HTML. 
+    Normalement, les éléments suivants sont couverts par le CSS fourni, mais assurez-vous qu’ils sont bien présents : 
+        l’ombre portée sur la carte ;
+        les attributs alt ;
+        les border-radius sur les images.
+
+Gérez l’affichage des « cards » du conteneur « Hébergements à Marseille »
+    Pour cette étape, une bonne partie de l’affichage des éléments de la page est déjà gérée par le code fourni, 
+    notamment grâce à Flexbox et l’utilisation de largeurs en pourcentages. Même si vous n’avez pas besoin de coder ces parties, 
+    assurez-vous de bien comprendre le code associé.
+    Dupliquez la « card » réalisée précédemment dans le but d’en avoir 6 comme sur la maquette.
+    Réaliser la mise en page de ce conteneur. 
+    L’utilisation de flexbox ainsi que la définition de la largeur des « cards » en pourcentage devrait vous aider 
+    (pour cela, inspirez-vous de ce qui a déjà été fait).
+    Remplacez le contenu des différentes « cards » dupliquées par le contenu des « cards » de la maquette.
+    Le responsive pourra encore être géré plus tard, 
+    mais gardez en tête que l’ordre d’affichage des deux conteneurs change en fonction de la version : mobile, tablette ou desktop. 
+    N’oubliez pas le titre, l’icône et le lien « Afficher plus ».
+
+Intégrez le conteneur « Activités à Marseille »
+    Appuyez-vous sur les précédentes recommandations données pour la réalisation des différentes cartes.
+    Dans cette section, la structure est un peu différente puisque c’est une présentation en 4 colonnes. 
+    La hauteur de chacune des activités est identique. Il faudra alors mettre en place (comme dans les étapes précédentes) une première activité, 
+    et intégrer les 3 autres à partir de la première.
+    Les images doivent être intégrées via le HTML et non le CSS.
+    N’oubliez pas les attributs alt. Cela fait plusieurs fois que ce point est évoqué, mais il est important de le rappeler !
+
+Implémentez le footer
+
+    Une fois encore, vous pouvez utiliser Flexbox pour la mise en page.
+    Il faudra bien vous appuyer sur le découpage de votre maquette, et identifier les différents éléments ainsi que les différents blocs. 
+    Le footer se présente sous 3 colonnes de tailles identiques.
+    Si vous utilisez des `ul` pour réaliser les liens, vous avez par défaut un padding-left qui s’applique. 
+    Pensez à l’enlever, car cela va provoquer un décalage par rapport à ce qui se trouve juste au-dessus.
+
+Mettez en place le responsive design
+
+    Le code fourni vous donne un exemple d’utilisation des media queries pour le passage de l’affichage desktop à l’affichage tablette. Inspirez-vous en pour l’adapter au mobile.
+    Respectez bien les deux media queries définies : <=1024px pour l’affichage tablette et <768px pour l’affichage mobile ;
+    Pensez bien à respecter l’ordre du code fourni dans le CSS : d’abord le code CSS global, puis la media query tablette, puis la version mobile.
+    Pensez à définir une largeur maximum à 1440 px pour gérer correctement les écrans avec une grande résolution, ainsi qu’une largeur minimum de 320px.
+    Pensez à conserver la meta viewport fournie dans le code HTML.
+    Les couleurs de fond de certaines sections s'inversent entre la version mobile et la version desktop.
+
+Vérifiez la qualité de votre code
+
+    Concentrez vos efforts sur les erreurs remontées. Vous pouvez regarder les warnings, mais vous n’êtes pas obligé de les traiter.
+    Faites attention au nommage du code (des classes CSS, par exemple). Vous pouvez utiliser l’anglais ou le français, mais évitez de mixer les deux langues.
+    Utilisez le kebab case, par exemple `.main-wrapper` . C’est LA convention CSS la plus répandue.
+    Préférez généralement l’utilisation des pixels pour les margins/paddings, et les pourcentages pour les widths, dans le but de permettre la bonne gestion des différentes résolutions. Dans certains cas, l’utilisation de pixels pour les widths peut être quelque chose de pertinent (gestion de la taille d’une icône, par exemple).

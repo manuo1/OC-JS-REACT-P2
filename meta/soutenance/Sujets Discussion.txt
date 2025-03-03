@@ -1,0 +1,37 @@
+🔹 Le Web Sémantique
+
+    Utilisation de balises HTML qui donnent du sens au contenu (ex : <header>, <article>, <section>, <footer>).
+    Meilleure accessibilité pour les lecteurs d'écran et le SEO (référencement).
+    Facilite la maintenance et la compréhension du code.
+
+🔹 L’importance des validateurs
+
+    W3C HTML Validator & W3C CSS Validator = Détection des erreurs, amélioration de la compatibilité et des performances.
+
+🔹 Le fonctionnement de l'IDE
+
+    Auto-complétion, Formatage automatique, Utilisation de linters (ex : ESLint, Prettier), Debug intégré
+    Utilisation de plugins pour améliorer la productivité (ex : Live Server).
+
+🔹 La spécificité en CSS
+
+    La spécificité détermine quelle règle CSS s’applique en cas de conflit :
+        !important (le plus fort) (à éviter)
+        Sélecteur inline (style="color: red;") → Poids élevé (mauvaise pratique)
+        ID (#monId) → Spécificité forte
+        Classe/Pseudo-classe (.maClasse, :hover) → Spécificité moyenne
+        Élément (div, p) → Spécificité faible
+
+🔹 L’étude et la découpe de la maquette
+
+    Étapes :
+        Analyser la maquette (typographie, couleurs, espacement, hiérarchie).
+        Identifier les blocs principaux (header, sections, footer).
+        Définir une grille (Flexbox, Grid).
+        Créer des composants réutilisables (boutons, cartes, formulaires).
+
+🔹 L’importance de séparer le HTML du CSS
+
+    Facilite la maintenance et la réutilisation du code.
+    Meilleure organisation avec des fichiers séparés (index.html, style.css).
+    Améliore les performances en mettant le CSS en cache.
